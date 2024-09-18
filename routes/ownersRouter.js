@@ -6,7 +6,7 @@ router.get("/", function(req,res){
     res.send("hey it's working");
 });
 
-IF(process.env.NODE_ENV ==="development"){
+if(process.env.NODE_ENV ==="development"){
     router.post("/create", async function(req,res){
         let owners = await ownerModel.find();
         if(owners.length>0){
