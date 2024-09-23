@@ -1,10 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const ownerModel = require("../models/owner-model")
-
-router.get("/", function(req,res){
-    res.send("hey it's working");
-});
+const ownerModel = require("../models/owner-model");
 
 if(process.env.NODE_ENV ==="development"){
     router.post("/create", async function(req,res){
@@ -24,6 +20,12 @@ if(process.env.NODE_ENV ==="development"){
     })
 
 }
+
+
+
+router.get("/", function(req,res){
+    res.render("owner-login");
+});
 
 
 
