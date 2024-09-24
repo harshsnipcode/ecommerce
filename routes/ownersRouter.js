@@ -23,9 +23,12 @@ if(process.env.NODE_ENV ==="development"){
 
 
 
-router.get("/", function(req,res){
-    res.render("owner-login");
+router.get("/admin", function(req, res) {
+    // You can initialize success as an empty string or a message
+    const success = req.flash('success') || ''; // If you're using flash messages
+    res.render("createproducts", { success });
 });
+
 
 
 
