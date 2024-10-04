@@ -19,6 +19,8 @@ router.get("/shop", isloggedin, async function(req, res) {
     }
 });
 
-
+router.get("/logout", isloggedin, async function(req, res){
+    res.render("/");
+})
 
 module.exports = router;

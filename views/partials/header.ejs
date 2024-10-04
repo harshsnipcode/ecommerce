@@ -9,15 +9,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="font-sans pt-16">
-    <header class="w-full fixed top-0 left-0 bg-white shadow-md z-10">
-        <nav class="flex items-center justify-between px-5 py-3">
-            <h3 class="text-xl font-bold">Scatch</h3>
+<body class="font-sans pt-16 ">
+    <header class="w-full fixed top-0 left-0 bg-white shadow-md z-10 bg-zinc-800">
+        <nav class="flex items-center justify-between px-5 py-3 text-blue-300">
+            <h3 class="text-xl font-bold text-blue-500">MiniProject</h3>
+            <!-- <% var loggedin= typeof loggedin!== "unde" %> -->
             <ul class="flex space-x-4">
                 <li><a href="/shop" class="hover:text-blue-500">Shop</a></li>
-                <li><a href="/about" class="hover:text-blue-500">About</a></li>
-                <li><a href="/contact" class="hover:text-blue-500">Contact</a></li>
-                <li><a href="/login" class="hover:text-blue-500">Login</a></li>
+                <li><a href="/" class="hover:text-blue-500">Cart</a></li>
+                <li><a href="/" class="hover:text-blue-500">My Account</a></li>
+                <li><a class="text-red-600" href="/users/logout" class="hover:text-blue-500">Logout</a></li>
             </ul>
         </nav>
     </header>
